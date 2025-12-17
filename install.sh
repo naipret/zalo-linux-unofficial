@@ -19,7 +19,7 @@ if command -v apt &>/dev/null; then # Debian/Ubuntu
     sudo apt update
     sudo apt install -y python3 python3-pip python3-venv unzip wget
 elif command -v dnf &>/dev/null; then  # Fedora/RHEL/CentOS
-    sudo dnf install -y python3 python3-pip python3-venv unzip wget
+    sudo dnf install -y python3 python3-pip python3-virtualenv unzip wget
 elif command -v pacman &>/dev/null; then  # Arch Linux
     sudo pacman -Sy --noconfirm python python-pip python-venv unzip wget
 else
